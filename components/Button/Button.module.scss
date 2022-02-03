@@ -1,0 +1,27 @@
+.button {
+  width: 120px;
+  height: 38px;
+  background: #e6faf8;
+  border: 1.5px solid #00a291;
+  box-sizing: border-box;
+  border-radius: 6.05991px;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+
+  &__right_icon{
+    margin-left: 8px;
+  }
+
+  &__left_icon{
+    margin-right: 8px;
+  }
+  
+  &__arrow {
+    position: absolute;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+}
+

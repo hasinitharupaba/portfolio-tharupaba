@@ -1,0 +1,154 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/workbg.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.topic {
+  margin-right: auto;
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &__portrait {
+    margin-left: auto;
+    margin-right: 160px;
+  }
+
+  &__main_title {
+    text-align: left;
+    color: var(--N-900);
+  }
+
+  &__colored_title {
+    font-family: var(--heading-font-family);
+    color: var(--B-800);
+  }
+
+  &__description {
+    color: #273040;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 60%;
+
+    a {
+      color: var(--B-800);
+    }
+  }
+}
+
+.green_background {
+  background: rgba(240, 255, 254, 0.2);
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+
+  &__heading {
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.tech_cards {
+  display: flex;
+  margin-top: 40px;
+}
+
+.tech_card {
+  margin: 24px;
+  padding: 40px;
+  text-align: center;
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0px 12px 30px -7px rgba(0, 34, 31, 0.1);
+  border-radius: 8px;
+
+  &__img {
+    padding-top: 40px;
+  }
+
+  &__heading {
+    color: #00a291;
+    margin: 20px;
+    font-weight: 400;
+  }
+
+  &__description {
+    color: #273040;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+}
+
+.fun_projects{
+  background-color: violet;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__heading{
+    text-align: center;
+  }
+
+  &__card{
+
+  }
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  color: #a6a8aa;
+  a:hover{
+    color: var(--B-700);
+  }
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+
+  &__list{
+    margin: 20px;
+    :hover{
+      color: var(--B-700);
+    }
+
+    &__link{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: violet;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

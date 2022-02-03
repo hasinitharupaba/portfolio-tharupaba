@@ -1,0 +1,50 @@
+.work_card {
+  padding-top: 40px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    &__title {
+      color: var(--N-900);
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 40px;
+    color: #5e6c84;
+  }
+
+  &__left_image {
+    margin-left: 180px;
+  }
+
+  &__right_image {
+    margin-right: 180px;
+  }
+
+  &__img {
+    margin: 100px;
+  }
+
+  &__button {
+    margin: 0;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__button_mright {
+    margin-right: 20px;
+  }
+}
