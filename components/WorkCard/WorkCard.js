@@ -9,6 +9,10 @@ export const WorkCard = ({
   children,
   leftImage,
   rightImage,
+  heading,
+  gitHubLink,
+  demoLink,
+  description,
   ...restProps
 }) => {
   return (
@@ -26,21 +30,29 @@ export const WorkCard = ({
       )}
 
       <div className={styles.work_card__text}>
-        <h4 className={styles.work_card__text__title}>Calculator App</h4>
-        <p className={`text-base ${styles.work_card__description}`}>
-          Product design and Development
-        </p>
+        <h4 className={styles.work_card__text__title}>{heading}</h4>
+
+        {description && (
+          <p className={`text-base ${styles.work_card__description}`}>
+            {description}
+          </p>
+        )}
+
         <div className={styles.work_card__button}>
-          <Link href="" passHref>
-            <Button label="Live Demo" />
+          <Link href={demoLink || ""} passHref>
+            <a target="_blank">
+              <Button label="Live Demo" />
+            </a>
           </Link>
-          <Link href="" passHref>
-            <Button
-              label="GitHub"
-              leftIcon={"/images/github-black.svg"}
-              width={14}
-              height={14}
-            />
+          <Link href={gitHubLink || ""} passHref>
+            <a target="_blank">
+              <Button
+                label="GitHub"
+                leftIcon={"/github-black.svg"}
+                width={14}
+                height={14}
+              />
+            </a>
           </Link>
         </div>
       </div>

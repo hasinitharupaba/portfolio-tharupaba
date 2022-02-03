@@ -38,6 +38,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .icon {
   fill: #728197;
   :hover {
@@ -45,4 +50,24 @@ a {
   }
 }
 
+.social-icon {
+  &:hover {
+    .icon {
+      fill: var(--B-700);
+    }
+  }
+}
+
 @import "typography";
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+}

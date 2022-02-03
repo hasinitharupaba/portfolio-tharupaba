@@ -1,10 +1,10 @@
 .work_card {
-  padding-top: 40px;
-  margin-bottom: 120px;
+  align-items: center;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   justify-content: center;
+  margin-bottom: 120px;
+  padding-top: 40px;
 
   &__text {
     display: flex;
@@ -15,36 +15,113 @@
       color: var(--N-900);
       font-size: 24px;
       font-weight: 400;
+      margin-bottom: 40px;
       margin: 0;
-      margin-bottom: 12px;
     }
   }
 
   &__description {
-    margin: 0;
-    margin-bottom: 40px;
     color: #5e6c84;
+    margin-bottom: 40px;
+    margin: 0;
   }
 
   &__left_image {
-    margin-left: 180px;
+    margin-left: 100px;
   }
 
   &__right_image {
-    margin-right: 180px;
+    margin-right: 100px;
   }
 
   &__img {
-    margin: 100px;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: rotateme;
+    animation-timing-function: linear;
+    object-fit: contain;
+
+    @keyframes rotateme {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 
   &__button {
-    margin: 0;
     display: flex;
     gap: 40px;
+    margin: 0;
   }
 
   &__button_mright {
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .work_card {
+    padding-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__title {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__left_image {
+      margin-left: 20px;
+    }
+
+    &__right_image {
+      margin-right: 20px;
+    }
+
+    &__button {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .work_card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    padding-top: 20px;
+
+    &__text {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__title {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__left_image {
+      margin-left: 20px;
+    }
+
+    &__right_image {
+      margin-right: 20px;
+    }
+
+    &__button {
+      gap: 20px;
+    }
   }
 }

@@ -10,7 +10,7 @@ import WorkCard from "../components/WorkCard/WorkCard";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/siteicon.png" />
 
@@ -50,7 +50,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={`container ${styles.topic}`}>
-          <div>
+          <div className={styles.topic__section}>
             <h1 className={`h1 ${styles.topic__main_title}`}>Hey! I am</h1>
             <h1 className={`h1 ${styles.topic__colored_title}`}>
               Hasini Tharupaba
@@ -58,7 +58,7 @@ export default function Home() {
 
             <p className={`text-base ${styles.topic__description}`}>
               Passionated front-end engineer from Sri Lanka who made a career
-              shift from Demography to programming. Specialises in UI
+              shift from Demography to programming. I am specialised in UI
               engineering technologies such as JavaScript, SASS, and
               Tailwindcss. <br />I turn coffee into code{" "}
               <a
@@ -76,11 +76,11 @@ export default function Home() {
               <li className={styles.socials__list}>
                 <Link href="https://www.instagram.com/pabacodes/">
                   <a
-                    className={styles.socials__list__link}
+                    className={`${styles.socials__list__link} social-icon`}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Instagram />
+                    <Instagram className={styles.socials__list__link__icon} />
                   </a>
                 </Link>
               </li>
@@ -88,7 +88,7 @@ export default function Home() {
               <li className={styles.socials__list}>
                 <Link href="https://github.com/hasinitharupaba">
                   <a
-                    className={styles.socials__list__link}
+                    className={`${styles.socials__list__link} social-icon`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -100,7 +100,7 @@ export default function Home() {
               <li className={styles.socials__list}>
                 <Link href="https://www.linkedin.com/in/hasini-tharupaba/">
                   <a
-                    className={styles.socials__list__link}
+                    className={`${styles.socials__list__link} social-icon`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -116,7 +116,7 @@ export default function Home() {
           <h2 className={`h2 ${styles.green_background__heading}`}>
             Things I love
           </h2>
-          <div className="container">
+          <div>
             <section className={styles.tech_cards}>
               <div className={styles.tech_card}>
                 <Image
@@ -167,10 +167,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`container ${styles.fun_projects}`}>
+        <div className={`${styles.fun_projects}`}>
           <h2 className={`h2 ${styles.fun_projects__heading}`}>Fun Projects</h2>
-          
-          <div className={styles.fun_projects__card}><WorkCard leftImage=''/></div>
+
+          <div className={styles.fun_projects__card}>
+            <WorkCard
+              leftImage="/cursor-image.png"
+              heading="Firefly Cursor"
+              gitHubLink="https://github.com/hasinitharupaba/cursor-firefly"
+              demoLink="https://cursor-firefly.vercel.app/"
+            />
+          </div>
         </div>
       </main>
 
