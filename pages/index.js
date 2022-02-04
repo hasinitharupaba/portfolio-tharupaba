@@ -137,7 +137,7 @@ export default function Home() {
                 <Image
                   alt="JS"
                   className={styles.tech_card__img}
-                  src="/js.svg"
+                  src="/planning.svg"
                   height={80}
                   width={80}
                 />

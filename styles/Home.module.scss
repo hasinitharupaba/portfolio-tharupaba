@@ -113,7 +113,7 @@
 .footer {
   align-items: center;
   border-top: 1px solid #eaeaea;
-  color: #a6a8aa;
+  color: #535658;
   display: flex;
   gap: 100px;
   justify-content: center;
@@ -179,13 +179,17 @@
     padding: 20px;
     width: 260px;
 
+    &__img{
+      padding-bottom: 200px;
+    }
+
     &__heading {
       color: #00a291;
       font-size: 20px;
       font-weight: 400;
       line-height: 0;
-      padding-bottom: 24px;
-      padding-top: 24px;
+      margin-bottom: 24px;
+      margin-top: 24px;
       padding: 0;
     }
 

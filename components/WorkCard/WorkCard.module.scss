@@ -4,7 +4,6 @@
   flex-direction: row-reverse;
   justify-content: center;
   margin-bottom: 120px;
-  padding-top: 40px;
 
   &__text {
     display: flex;
@@ -15,7 +14,7 @@
       color: var(--N-900);
       font-size: 24px;
       font-weight: 400;
-      margin-bottom: 40px;
+      padding-bottom: 40px;
       margin: 0;
     }
   }
@@ -65,7 +64,6 @@
 @media (max-width: 767px) {
   .work_card {
     padding-top: 20px;
-    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
 
@@ -76,7 +74,7 @@
       align-items: center;
 
       &__title {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
     }
 
@@ -108,7 +106,7 @@
       justify-content: center;
 
       &__title {
-        margin-bottom: 40px;
+        margin: 0;
       }
     }
 
