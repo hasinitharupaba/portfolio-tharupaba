@@ -34,8 +34,8 @@ export const Button = ({
             className={styles.button__arrow}
             alt="Right icon"
             src={rightIcon}
-            width={15}
-            height={8}
+            width={width}
+            height={width}
           />
         </span>
       )}

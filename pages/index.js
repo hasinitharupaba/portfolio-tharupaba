@@ -79,8 +79,9 @@ export default function Home() {
                     className={`${styles.socials__list__link} social-icon`}
                     target="_blank"
                     rel="noreferrer"
+                    alt="instagram icon"
                   >
-                    <Instagram className={styles.socials__list__link__icon} />
+                    <Instagram className={styles.socials__list__link__icon} />Instagram
                   </a>
                 </Link>
               </li>
@@ -91,8 +92,9 @@ export default function Home() {
                     className={`${styles.socials__list__link} social-icon`}
                     target="_blank"
                     rel="noreferrer"
+                    alt="github icon"
                   >
-                    <Github />
+                    <Github />Github
                   </a>
                 </Link>
               </li>
@@ -103,8 +105,9 @@ export default function Home() {
                     className={`${styles.socials__list__link} social-icon`}
                     target="_blank"
                     rel="noreferrer"
+                    alt="linkedin icon"
                   >
-                    <Linkedin />
+                    <Linkedin />Linkedin
                   </a>
                 </Link>
               </li>
@@ -123,10 +126,10 @@ export default function Home() {
                   alt="HTML"
                   className={styles.tech_card__img}
                   src="/html.svg"
-                  height={80}
-                  width={80}
+                  height="80px"
+                  width="80px"
                 />
-                <h4 className={`h5 ${styles.tech_card__heading}`}>Frontend</h4>
+                <h3 className={`h5 ${styles.tech_card__heading}`}>Frontend</h3>
                 <p className={`text-base ${styles.tech_card__description}`}>
                   I’m more focused on Frontend and love to work with ReactJs,
                   HTML, CSS
@@ -138,8 +141,8 @@ export default function Home() {
                   alt="JS"
                   className={styles.tech_card__img}
                   src="/planning.svg"
-                  height={80}
-                  width={80}
+                  height="80px"
+                  width="80px"
                 />
                 <h4 className={`h5 ${styles.tech_card__heading}`}>
                   Project Planning
@@ -155,8 +158,8 @@ export default function Home() {
                   alt="Design"
                   className={styles.tech_card__img}
                   src="/design.svg"
-                  height={80}
-                  width={80}
+                  height="80px"
+                  width="80px"
                 />
                 <h4 className={`h5 ${styles.tech_card__heading}`}>Design</h4>
                 <p className={`text-base ${styles.tech_card__description}`}>
@@ -168,7 +171,7 @@ export default function Home() {
         </div>
 
         <div className={`${styles.fun_projects}`}>
-          <h2 className={`h2 ${styles.fun_projects__heading}`}>Fun Projects</h2>
+          <h4 className={`h2 ${styles.fun_projects__heading}`}>Fun Projects</h4>
 
           <div className={styles.fun_projects__card}>
             <WorkCard
@@ -183,7 +186,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p className="text-base">
-          <a href="mailto:hasinitharupaba@gmail.com">
+          <a href="mailto:hasinitharupaba@gmail.com" rel="noreferrer">
             hasinitharupaba@gmail.com
           </a>
         </p>

@@ -23,14 +23,14 @@ export const WorkCard = ({
             className={styles.work_card__img}
             alt="Left Image"
             src={leftImage}
-            width={440}
-            height={330}
+            width="440px"
+            height="330px"
           />
         </div>
       )}
 
       <div className={styles.work_card__text}>
-        <h4 className={styles.work_card__text__title}>{heading}</h4>
+        <h5 className={styles.work_card__text__title}>{heading}</h5>
 
         {description && (
           <p className={`text-base ${styles.work_card__description}`}>
@@ -40,12 +40,12 @@ export const WorkCard = ({
 
         <div className={styles.work_card__button}>
           <Link href={demoLink || ""} passHref>
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
               <Button label="Live Demo" />
             </a>
           </Link>
           <Link href={gitHubLink || ""} passHref>
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer">
               <Button
                 label="GitHub"
                 leftIcon={"/github-black.svg"}
@@ -63,8 +63,8 @@ export const WorkCard = ({
             className={styles.work_card__img}
             alt="Right Image"
             src={rightImage}
-            width={440}
-            height={330}
+            width="440px"
+            height="330px"
           />
         </div>
       )}
